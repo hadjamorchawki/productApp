@@ -8,10 +8,10 @@
 		<version>3.3.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.prodGroupe</groupId>
-	<artifactId>productApp</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>demotp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>productApp</name>
+	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

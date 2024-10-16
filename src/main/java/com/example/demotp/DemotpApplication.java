@@ -1,13 +1,13 @@
-package com.prodGroupe.productApp;
+package com.example.demotp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProductAppApplication {
+public class DemotpApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProductAppApplication.class, args);
+		SpringApplication.run(DemotpApplication.class, args);
 	}
 
 }
