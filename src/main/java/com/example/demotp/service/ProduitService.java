@@ -23,4 +23,8 @@ public class ProduitService {
  public void delete(Long id) {
  produitRepository.deleteById(id);
  } 
+ // Method for searching products by libelle
+ public List<Produit> findByLibelleContainingIgnoreCase(String libelle) {
+    return produitRepository.findByLibelleContainingIgnoreCase(libelle);
+}
 }
