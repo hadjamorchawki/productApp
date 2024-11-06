@@ -39,26 +39,4 @@ public class ProduitController {
         }
     }
 
-    // Update a product
-    @PostMapping("/edit/{id}")
-    public String updateProduit(@PathVariable("id") Long id, Produit produitDetails) {
-        Produit produit = produitService.findById(id);
-        if (produit != null) {
-            produit.setLibelle(produitDetails.getLibelle());
-            produit.setPrix(produitDetails.getPrix());
-            produit.setQteStock(produitDetails.getQteStock());
-            produitService.save(produit);
-        }
-        return "redirect:/produits"; // Redirect to the product list after updating
-    }
-
-    // Delete a product
-    @PostMapping("/delete/{id}")
-    public String deleteProduit(@PathVariable("id") Long id) {
-        Produit produit = produitService.findById(id);
-        if (produit != null) {
-            produitService.delete(id);
-        }
-        return "redirect:/produits"; // Redirect to the product list after deletion
-    }
 }
