@@ -15,7 +15,6 @@ public class ProduitController {
     @Autowired
     private ProduitService produitService;
 
-    // Display all products with optional search functionality
     @GetMapping
     public String getAllProduits(Model model, @RequestParam(name = "search", required = false) String search) {
         List<Produit> produits;
